@@ -48,7 +48,7 @@ func TestHelloGpt(t *testing.T) {
 	// 你好！我是一个AI助理，没有具体的名字。你可以随意称呼我。有什么我可以帮助你的吗？
 }
 
-func TestToken(t *testing.T) {
+func TestEncodeToken(t *testing.T) {
 	chinese := "在未来还没有到来的时候，总要有人把它创造出来，那个人应该是我们。"
 	encoding, err := tiktoken.EncodingForModel("gpt-3.5-turbo")
 	if err != nil {
