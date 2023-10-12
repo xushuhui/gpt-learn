@@ -10,8 +10,8 @@ import (
 	"github.com/spf13/cast"
 )
 
-// 写一句中文，通过API让GPT输出英文译文
-// 分别计算问题1中英语句子和对应中文译文的token数
+// 1. 写一句中文，通过 API 让 GPT 输出英文译文
+// 2. 分别计算问题 1 中英语句子和对应中文译文的token数
 func TestTranslate(t *testing.T) {
 	client := openai.NewClient("your openai key")
 	chinese := "在未来还没有到来的时候，总要有人把它创造出来，那个人应该是我们。"
